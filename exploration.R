@@ -6,10 +6,20 @@ rownames(pnet) <- pnet$Pollinator
 pnet <- as.matrix(pnet[,-1])
 head(pnet)
 
+#load functions
+invlogit <- function (x) {
+  InvLogit <- 1/{
+    1 + exp(-x)
+  }
+  return(InvLogit)
+}
+
+#create probabilities
+pnet <- invlogit(pnet)
+
 #explore
 hist(pnet)
-mean(pnet) #almost 0
-hist(pnet/max(pnet))
+mean(pnet) #wow... most interactions have high uncertainty ~0.5
 
 
 #lets create a fake metaweb

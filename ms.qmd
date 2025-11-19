@@ -8,6 +8,10 @@ editor: visual
 
 Human activities are reshaping biodiversity at unprecedented rates. However, as species change their distribution tracking climate change, the fate of their interactions remains unknown. Here, we leveraged recent developments on plant-pollinator interactions probabilistic metawebs to test its potential to predict current plant-pollinator networks and scale up its predictive power to understand how networks change across space and in future scenarios of climate change. First, we develop plant and pollinator SDM to derive the probability of species occurrence across Europe. Then, for each cell, we combine the probability of species occurrences with the probability of species interactions to reconstruct potential local interaction networks (i.e. multiple realizations of the probabilistic network). We test the accuracy of this predicted networks to capture the structure of observed networks across EU (by using the Z-score of the observed networks vs. the distribution of potential networks for key structural indices). As the used probability of interaction between two species is independent of their context, we enhance this predictions by modeling this non-independence at the community level using optimization algorithms informed by ecological rules. Once the models are validated, we use this same framework to predict future plant-pollinator networks for contracting future scenarios based on IPCC. The plant and pollinator predicted occurrences for each scenario account for dispersal limitations beyond purely climate driven suitable conditions. We first test how basic properties of potential realized plant-pollinator networks change over time. In particular, the number of plants and pollinators recovered, the probability of species getting disconnected, species degree and network nestedness. Second, we measure the rate of change across time and over space to track the speed of change and potential homogenization process. To that end we use betadiversity indices.
 
+## Introduction
+
+We use the terms *metaweb* (Dunne [**2006**](https://onlinelibrary.wiley.com/doi/10.1111/ele.70161#ele70161-bib-0032)) to designate regional networks of potential interactions and *local networks* (Poisot et al. [**2012**](https://onlinelibrary.wiley.com/doi/10.1111/ele.70161#ele70161-bib-0078)) for those of realised interactions.
+
 ## Figures
 
 -   Z-score validation.
@@ -17,3 +21,7 @@ Human activities are reshaping biodiversity at unprecedented rates. However, as 
 -   Map of europe with rate of change over time as color intensity.
 
 -   Map of europe tracking betadiversity (one map per time period).
+
+## References
+
+Banville, F., T. Strydom, P. S. A. Blyth, et al. 2025. “Deciphering Probabilistic Species Interaction Networks.” *Ecology Letters* 28, no. 6: e70161. https://doi.org/10.1111/ele.70161.
